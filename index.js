@@ -4,7 +4,7 @@ const console = require("console");
 const canvas = createCanvas(1000, 1000);
 const ctx = canvas.getContext('2d');
 const { layers, width, height } = require("./input/config.js");
-const edition = 50;
+const edition = 1000;
 
 const saveLayer = (_canvas, _edition) => {
     fs.writeFileSync(`./output/${_edition}.png`, _canvas.toBuffer("image/png"));
